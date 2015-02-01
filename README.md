@@ -57,7 +57,7 @@ public class User {
 }
 ```
 
-Then you can use the CSVReader.readFile method to parse users :
+Then you can use the CSVReader.readFile method to parse users from an Activity (first parameter is context) :
 ```java
  List<Object> users = CSVReader.readFile(this, R.raw.users, User.class);
 ```
