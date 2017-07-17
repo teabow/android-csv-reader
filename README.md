@@ -2,7 +2,8 @@
 An Android csv reader implementation with annotations
 
 From a `users.csv` file :
-````
+
+```
 lastname,fisrtname,city
 Bryant,Kobe,Los Angeles
 James,LeBron,Akron
@@ -10,6 +11,7 @@ Parker,Tony,Paris
 ```
 
 Create the related model with CSVAnnotations :
+
 ```java
 public class User {
 
@@ -58,6 +60,7 @@ public class User {
 ```
 
 Then you can use the CSVReader.readFile method to parse users from an Activity (first parameter is context) :
+
 ```java
  List<Object> users = CSVReader.readFile(this, R.raw.users, User.class);
 ```
